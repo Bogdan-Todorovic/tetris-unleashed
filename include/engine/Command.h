@@ -1,0 +1,9 @@
+#ifndef TETRISUNLEASHED_COMMAND_H
+#define TETRISUNLEASHED_COMMAND_H
+
+
+class Command {
+};
+
+
+#endif //TETRISUNLEASHED_COMMAND_H
