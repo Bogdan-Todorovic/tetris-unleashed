@@ -1,0 +1,9 @@
+#ifndef TETRISUNLEASHED_BOARD_H
+#define TETRISUNLEASHED_BOARD_H
+
+
+class Board {
+};
+
+
+#endif //TETRISUNLEASHED_BOARD_H

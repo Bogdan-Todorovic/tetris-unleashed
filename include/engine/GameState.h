@@ -1,0 +1,9 @@
+#ifndef TETRIS_UNLEASHED_GAMESTATE_H
+#define TETRIS_UNLEASHED_GAMESTATE_H
+
+
+class GameState {
+};
+
+
+#endif //TETRIS_UNLEASHED_GAMESTATE_H

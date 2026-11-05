@@ -1,0 +1,9 @@
+#ifndef TETRISUNLEASHED_SCORER_H
+#define TETRISUNLEASHED_SCORER_H
+
+
+class Scorer {
+};
+
+
+#endif //TETRISUNLEASHED_SCORER_H

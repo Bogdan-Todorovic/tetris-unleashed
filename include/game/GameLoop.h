@@ -1,0 +1,9 @@
+#ifndef TETRIS_UNLEASHED_GAMELOOP_H
+#define TETRIS_UNLEASHED_GAMELOOP_H
+
+
+class GameLoop {
+};
+
+
+#endif //TETRIS_UNLEASHED_GAMELOOP_H
