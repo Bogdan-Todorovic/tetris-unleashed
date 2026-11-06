@@ -1,0 +1,13 @@
+#ifndef TETRISUNLEASHED_COMMANDTYPE_H
+#define TETRISUNLEASHED_COMMANDTYPE_H
+
+enum class CommandType {
+    MOVE_LEFT = 0,
+    MOVE_RIGHT = 1,
+    ROTATE = 2,
+    SOFT_DROP = 3,
+    HARD_DROP = 4,
+    PLACE = 5
+};
+
+#endif //TETRISUNLEASHED_COMMANDTYPE_H
