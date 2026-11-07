@@ -19,8 +19,13 @@ GameStateBuilder & GameStateBuilder::setTick(int tick_) {
     return *this;
 }
 
-GameStateBuilder & GameStateBuilder::setActiveFigure(FigureType figure) {
+GameStateBuilder & GameStateBuilder::setFigure(std::array<uint16_t, Constants::FIGURE_ROWS> figure) {
     this->activeFigure = figure;
+    return *this;
+}
+
+GameStateBuilder & GameStateBuilder::setActiveFigureType(FigureType figureType) {
+    this->activeFigureType = figureType;
     return *this;
 }
 

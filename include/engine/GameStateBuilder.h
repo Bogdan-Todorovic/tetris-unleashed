@@ -16,7 +16,8 @@ public:
     GameStateBuilder& setRngState(uint32_t rngState_);
     GameStateBuilder& setTick(int tick_);
 
-    GameStateBuilder& setActiveFigure(FigureType figure);
+    GameStateBuilder& setFigure(std::array<uint16_t, Constants::FIGURE_ROWS> figure);
+    GameStateBuilder& setActiveFigureType(FigureType figureType);
     GameStateBuilder& setActiveFigureX(int x);
     GameStateBuilder& setActiveFigureY(int y);
     GameStateBuilder& setActiveFigureRotation(Rotation rotation);
@@ -34,7 +35,8 @@ private:
     uint32_t rngState{};
     int tick{};
 
-    FigureType activeFigure{};
+    std::array<uint16_t, Constants::FIGURE_ROWS> activeFigure{0, 0, 0, 0};
+    FigureType activeFigureType{};
     int activeFigureX{};
     int activeFigureY{};
     Rotation activeFigureRotation{};
