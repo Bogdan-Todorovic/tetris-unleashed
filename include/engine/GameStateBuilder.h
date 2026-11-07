@@ -8,6 +8,8 @@ class GameState;
 
 class GameStateBuilder {
 public:
+    friend class GameState;
+
     GameStateBuilder();
 
     GameStateBuilder& setBoard(const Board &board_);
