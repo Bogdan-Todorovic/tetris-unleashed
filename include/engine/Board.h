@@ -2,20 +2,20 @@
 #define TETRISUNLEASHED_BOARD_H
 #include <array>
 
+#include "common/Constants.h"
+
 
 class Board {
 public:
-    static constexpr int ROWS = 20;
-    static constexpr uint16_t EMPTY_ROW = 0;
-    static constexpr uint16_t FULL_ROW = 0b1111111111;
-
     Board();
     int clearFullRows();
-    void setFigure(std::array<uint16_t, 4> figure, int y);
+    void setFigure(std::array<unsigned short, 4> figure, int x, int y);
+
+    [[nodiscard]] std::array<uint16_t, Constants::ROWS> getField() const;
 
 private:
     void updateField(int row);
-    std::array<uint16_t, ROWS> field{0};
+    std::array<uint16_t, Constants::ROWS> field{0, 0, 0, 0};
 };
 
 
