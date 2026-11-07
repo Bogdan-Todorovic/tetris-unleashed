@@ -5,8 +5,8 @@
 class Scorer {
 public:
     Scorer();
-    int increaseScore(int clearedRows, int currentScore);
-    int increaseLevel(int currentScore);
+    static int increaseScore(int clearedRows, int currentScore);
+    static int increaseLevel(int currentScore);
 };
 
 
