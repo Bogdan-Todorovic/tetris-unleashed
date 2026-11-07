@@ -18,7 +18,7 @@ public:
         LegalMoveEval& legalMoveEval,
         MoveEffectEval& moveEffectEval);
 
-    void step(Command command, GameState gameState);
+    static void step(Command command, GameState& gameState);
 
 private:
     Generator& generator;
