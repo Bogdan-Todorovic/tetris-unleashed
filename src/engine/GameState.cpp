@@ -5,8 +5,9 @@ GameState::GameState(const GameStateBuilder &builder) {
     this->rngState = builder.rngState;
     this->tick = builder.tick;
     this->activeFigure = builder.activeFigure;
-    this->activeFigureX = builder.activeFigureX;
-    this->activeFigureY = builder.activeFigureY;
+    this->activeFigureType = builder.activeFigureType;
+    this->activeFigureX = 3;
+    this->activeFigureY = 0;
     this->activeFigureRotation = builder.activeFigureRotation;
     this->score = builder.score;
     this->level = builder.level;

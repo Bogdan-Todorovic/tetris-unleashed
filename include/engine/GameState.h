@@ -10,7 +10,8 @@ public:
     Board board;
     uint32_t rngState;
     int tick;
-    FigureType activeFigure;
+    std::array<uint16_t, Constants::FIGURE_ROWS> activeFigure{};
+    FigureType activeFigureType;
     int activeFigureX;
     int activeFigureY;
     Rotation activeFigureRotation;
@@ -18,6 +19,8 @@ public:
     int level;
     int totalRowsCleared;
     FigureType nextFigure;
+    bool figureExist = false;
+    bool gameOver = false;
 
     explicit GameState(const GameStateBuilder &builder);
 };
