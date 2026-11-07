@@ -1,11 +1,18 @@
 #ifndef TETRISUNLEASHED_CLOCKMOVEADAPTER_H
 #define TETRISUNLEASHED_CLOCKMOVEADAPTER_H
 #include "engine/Command.h"
+#include <chrono>
 
+#include "MoveAdapter.h"
 
-class ClockMoveAdapter {
+class ClockMoveAdapter : public MoveAdapter{
 public:
-    Command createCommand();
+    explicit ClockMoveAdapter(std::chrono::milliseconds interval);
+    Command createCommand() override;
+
+private:
+    std::chrono::steady_clock::time_point lastDrop;
+    std::chrono::milliseconds interval{};
 };
 
 
