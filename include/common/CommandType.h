@@ -2,6 +2,7 @@
 #define TETRISUNLEASHED_COMMANDTYPE_H
 
 enum class CommandType {
+    NONE = -1,
     MOVE_LEFT = 0,
     MOVE_RIGHT = 1,
     ROTATE = 2,
