@@ -2,11 +2,19 @@
 #define TETRISUNLEASHED_MOVEEFFECTEVAL_H
 #include "Board.h"
 #include "Command.h"
+#include "GameState.h"
 
 
 class MoveEffectEval {
 public:
-    void evaluate(Command command, Board& board);
+    static void evaluate(Command command, GameState &gameState, int descend);
+
+private:
+    static void moveLeft(int& x);
+    static void moveRight(int& x);
+    static void rotate(std::array<uint16_t, Constants::FIGURE_ROWS> &figure, RotationDirection direction);
+    static void softDrop(int& y);
+    static void hardDrop(int &y, int descend);
 };
 
 
