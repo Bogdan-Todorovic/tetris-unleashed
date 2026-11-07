@@ -5,7 +5,7 @@
 
 class MoveAdapter {
 public:
-    virtual Command configureCommand() = 0;
+    virtual Command createCommand() = 0;
 
     virtual ~MoveAdapter() = default;
 };
