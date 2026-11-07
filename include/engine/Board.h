@@ -5,12 +5,17 @@
 
 class Board {
 public:
+    static constexpr int ROWS = 20;
+    static constexpr uint16_t EMPTY_ROW = 0;
+    static constexpr uint16_t FULL_ROW = 0b1111111111;
+
     Board();
     int clearFullRows();
-    void setFigure(std::array<uint16_t, 4> figure, int x, int y);
+    void setFigure(std::array<uint16_t, 4> figure, int y);
 
 private:
-    std::array<uint16_t, 20> field;
+    void updateField(int row);
+    std::array<uint16_t, ROWS> field{0};
 };
 
 
